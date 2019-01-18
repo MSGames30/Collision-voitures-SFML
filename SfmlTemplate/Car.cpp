@@ -189,3 +189,8 @@ void Car::resetPoints()
 		boundingBoxCornersDisplay[i].setPosition(newBoundingBoxCorners[i]);
 	}
 }
+
+void Car::resetMovementTimer()
+{
+	movementTimer.restart();
+}

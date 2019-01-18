@@ -52,6 +52,9 @@ public:
 	//fonction pour reinitialiser les points des coins
 	void resetPoints();
 
+	//fonction pour reset le timer de movement
+	void resetMovementTimer();
+
 private:
 	//identifiant de la voiture (DEBUG)
 	int ID;
