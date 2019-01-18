@@ -180,3 +180,12 @@ int Car::getCarID()
 {
 	return ID;
 }
+
+void Car::resetPoints()
+{
+	for (int i = 0; i < 4; i++)
+	{
+		newBoundingBoxCorners[i] = this->getTransform().transformPoint(originalBoundingBoxCorners[i]);
+		boundingBoxCornersDisplay[i].setPosition(newBoundingBoxCorners[i]);
+	}
+}

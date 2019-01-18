@@ -49,6 +49,9 @@ public:
 	//accesseur pour recupérer l'ID de la voiture
 	int getCarID();
 
+	//fonction pour reinitialiser les points des coins
+	void resetPoints();
+
 private:
 	//identifiant de la voiture (DEBUG)
 	int ID;
